@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Formulários - Sistema de Questionários</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Sistema de Questionários</h1>
+    </header>
+
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="perguntas.html">Perguntas</a>
+      <a href="formularios.html">Formulários</a>
+      <a href="respostas.html">Respostas</a>
+    </nav>
+
+    <main>
+      <div class="cabecalho-pagina">
+        <div>
+          <h2>Formulários cadastrados</h2>
+          <p>Monte e gerencie os questionários do sistema.</p>
+        </div>
+
+        <a class="btn btn-novo" href="formulario-form.html">
+          + Novo formulário
+        </a>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Título</th>
+            <th>Status</th>
+            <th>Qtd. perguntas</th>
+            <th>Vigência</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+
+        <tbody id="tabela-formularios"></tbody>
+      </table>
+    </main>
+
+    <script src="js/common.js"></script>
+    <script src="js/formularios.js"></script>
+  </body>
+</html>

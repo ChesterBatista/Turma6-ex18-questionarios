@@ -1,0 +1,24 @@
+{
+  "name": "turma-6-projeto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "server": "json-server db.json --port 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChesterBatista/Turma6-ex18-questionarios.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ChesterBatista/Turma6-ex18-questionarios/issues"
+  },
+  "homepage": "https://github.com/ChesterBatista/Turma6-ex18-questionarios#readme",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.15"
+  }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Perguntas - Sistema de Questionários</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Sistema de Questionários</h1>
+    </header>
+
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="perguntas.html">Perguntas</a>
+      <a href="formularios.html">Formulários</a>
+      <a href="respostas.html">Respostas</a>
+    </nav>
+
+    <main>
+      <div class="cabecalho-pagina">
+        <div>
+          <h2>Perguntas cadastradas</h2>
+          <p>Gerencie o banco de perguntas do sistema.</p>
+        </div>
+
+        <a class="btn btn-novo" href="pergunta-form.html">
+          + Nova pergunta
+        </a>
+      </div>
+
+      <div id="mensagem"></div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Enunciado</th>
+            <th>Tipo</th>
+            <th>Obrigatória</th>
+            <th>Alternativas</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+
+        <tbody id="tabela-perguntas">
+          <!-- preenchido pelo JavaScript -->
+        </tbody>
+      </table>
+    </main>
+
+    <script src="js/common.js"></script>
+    <script src="js/perguntas.js"></script>
+  </body>
+</html>

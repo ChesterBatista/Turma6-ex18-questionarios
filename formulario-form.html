@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>Cadastro de formulário</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Sistema de Questionários</h1>
+    </header>
+
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="perguntas.html">Perguntas</a>
+      <a href="formularios.html">Formulários</a>
+      <a href="respostas.html">Respostas</a>
+    </nav>
+
+    <main>
+      <h2 id="titulo-form">Novo formulário</h2>
+
+      <form id="form-formulario">
+        <label for="titulo">Título</label>
+
+        <input
+          type="text"
+          id="titulo"
+          name="titulo"
+          placeholder="Digite o título do formulário"
+          required
+        />
+
+        <label for="descricao">Descrição</label>
+
+        <textarea
+          id="descricao"
+          name="descricao"
+          rows="4"
+          placeholder="Descreva o objetivo do formulário"
+        ></textarea>
+
+        <label for="status">Status</label>
+
+        <select id="status" name="status" required>
+          <option value="rascunho">Rascunho</option>
+          <option value="publicado">Publicado</option>
+          <option value="encerrado">Encerrado</option>
+        </select>
+
+        <div class="grupo-datas">
+          <div>
+            <label for="dataInicio">Data de início</label>
+
+            <input
+              type="date"
+              id="dataInicio"
+              name="dataInicio"
+            />
+          </div>
+
+          <div>
+            <label for="dataFim">Data de fim</label>
+
+            <input
+              type="date"
+              id="dataFim"
+              name="dataFim"
+            />
+          </div>
+        </div>
+
+        <fieldset>
+          <legend>Perguntas do formulário</legend>
+
+          <p class="texto-ajuda">
+            Selecione pelo menos uma pergunta.
+          </p>
+
+          <div id="lista-perguntas">
+            Carregando perguntas...
+          </div>
+        </fieldset>
+
+        <div
+          id="mensagem-erro-formulario"
+          class="mensagem-erro"
+          hidden
+        ></div>
+
+        <div class="acoes-formulario">
+          <button type="submit" class="btn btn-salvar">
+            Salvar
+          </button>
+
+          <a href="formularios.html" class="btn btn-cancelar">
+            Cancelar
+          </a>
+        </div>
+      </form>
+    </main>
+
+    <script src="js/common.js"></script>
+    <script src="js/formularios.js"></script>
+  </body>
+</html>

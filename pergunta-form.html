@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>Cadastro de pergunta</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Sistema de Questionários</h1>
+    </header>
+
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="perguntas.html">Perguntas</a>
+      <a href="formularios.html">Formulários</a>
+      <a href="respostas.html">Respostas</a>
+    </nav>
+
+    <main>
+      <h2 id="titulo-form">Nova pergunta</h2>
+
+      <form id="form-pergunta">
+        <label for="enunciado">Enunciado</label>
+
+        <textarea
+          id="enunciado"
+          name="enunciado"
+          rows="4"
+          placeholder="Digite o texto da pergunta"
+          required
+        ></textarea>
+
+        <label for="tipo">Tipo da pergunta</label>
+
+        <select id="tipo" name="tipo" required>
+          <option value="">Selecione...</option>
+          <option value="multipla_escolha">
+            Múltipla escolha
+          </option>
+          <option value="texto_curto">
+            Texto curto
+          </option>
+          <option value="texto_longo">
+            Texto longo
+          </option>
+          <option value="checkbox">
+            Checkbox
+          </option>
+        </select>
+
+        <div class="campo-checkbox">
+          <input
+            type="checkbox"
+            id="obrigatoria"
+            name="obrigatoria"
+          />
+
+          <label for="obrigatoria">
+            Pergunta obrigatória
+          </label>
+        </div>
+
+        <div id="grupo-alternativas" hidden>
+          <label for="alternativas">
+            Alternativas
+          </label>
+
+          <p class="texto-ajuda">
+            Digite uma alternativa por linha.
+          </p>
+
+          <textarea
+            id="alternativas"
+            name="alternativas"
+            rows="8"
+            placeholder="JavaScript&#10;Python&#10;Java"
+          ></textarea>
+        </div>
+
+        <div
+          id="mensagem-erro"
+          class="mensagem-erro"
+          hidden
+        ></div>
+
+        <div class="acoes-formulario">
+          <button type="submit" class="btn btn-salvar">
+            Salvar
+          </button>
+
+          <a href="perguntas.html" class="btn btn-cancelar">
+            Cancelar
+          </a>
+        </div>
+      </form>
+    </main>
+
+    <script src="js/common.js"></script>
+    <script src="js/perguntas.js"></script>
+  </body>
+</html>

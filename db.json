@@ -1,0 +1,113 @@
+{
+  "perguntas": [
+    {
+      "enunciado": "Qual é sua linguagem de programação favorita?",
+      "tipo": "multipla_escolha",
+      "obrigatoria": true,
+      "alternativas": [
+        "JavaScript",
+        "Python",
+        "Java",
+        "C#"
+      ],
+      "criadaEm": "2026-07-22T10:00:00.000Z",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "enunciado": "Conte brevemente sua experiência com programação.",
+      "tipo": "texto_curto",
+      "obrigatoria": true,
+      "criadaEm": "2026-07-22T10:05:00.000Z"
+    },
+    {
+      "id": "3",
+      "enunciado": "Quais assuntos você mais gostou?",
+      "tipo": "checkbox",
+      "obrigatoria": false,
+      "alternativas": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Git"
+      ],
+      "criadaEm": "2026-07-22T10:10:00.000Z"
+    },
+    {
+      "enunciado": "Qual editor ou IDE você utiliza?",
+      "tipo": "multipla_escolha",
+      "obrigatoria": true,
+      "alternativas": [
+        "VS Code",
+        "IntelliJ",
+        "Eclipse",
+        "Sublime Text"
+      ],
+      "id": "TIP3Cr7DV_U"
+    },
+    {
+      "enunciado": "Você prefere front-end ou back-end?",
+      "tipo": "multipla_escolha",
+      "obrigatoria": true,
+      "alternativas": [
+        "Front-end",
+        "Back-end"
+      ],
+      "criadaEm": "2026-07-22T14:54:09.004Z",
+      "id": "XIBGjSQW_Yk"
+    },
+    {
+      "enunciado": "Quais editores você utiliza?",
+      "tipo": "checkbox",
+      "obrigatoria": false,
+      "alternativas": [
+        "VS Code",
+        "Sublime Text",
+        "IntelliJ"
+      ],
+      "criadaEm": "2026-07-22T14:56:46.950Z",
+      "id": "dD4uPPcbNqg"
+    },
+    {
+      "enunciado": "Conte sua experiência com o curso.",
+      "tipo": "texto_longo",
+      "obrigatoria": false,
+      "id": "uNECAGUJrT4"
+    }
+  ],
+  "formularios": [
+    {
+      "titulo": "Pesquisa sobre preferências de programação",
+      "descricao": "Questionário para conhecer as preferências dos alunos.",
+      "perguntas": [
+        "1",
+        "TIP3Cr7DV_U"
+      ],
+      "status": "encerrado",
+      "dataInicio": "2026-07-21T03:00:00.000Z",
+      "dataFim": "2026-07-28T02:59:59.000Z",
+      "criadoEm": "2026-07-22T16:23:40.806Z",
+      "id": "R1FSLnQLZ6Y"
+    }
+  ],
+  "respostas": [
+    {
+      "formularioId": "R1FSLnQLZ6Y",
+      "nome": "Chester Batista",
+      "email": "chester.batista@itlean.com.br",
+      "respostas": [
+        {
+          "perguntaId": "1",
+          "valor": "JavaScript"
+        },
+        {
+          "perguntaId": "TIP3Cr7DV_U",
+          "valor": "VS Code"
+        }
+      ],
+      "enviadoEm": "2026-07-22T16:28:52.517Z",
+      "id": "h5tx4ukrK3c"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
